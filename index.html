@@ -7,24 +7,26 @@
     <script src="https://kit.fontawesome.com/3ad462d937.js" crossorigin="anonymous"></script>
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <h1 class="title">Tic-Tac-Toe</h1>
     </header>
     <main class="main">
-        <div class="player-turn-message">Player X's turn</div>
+        <div class="messageBox">Player X's turn</div>
         <div class="gameboard">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+            <div class="square" data-index="1"></div>
+            <div class="square" data-index="2"></div>
+            <div class="square" data-index="3"></div>
+            <div class="square" data-index="4"></div>
+            <div class="square" data-index="5"></div>
+            <div class="square" data-index="6"></div>
+            <div class="square" data-index="7"></div>
+            <div class="square" data-index="8"></div>
+            <div class="square" data-index="9"></div>
         </div>
+        <button class="restart-button">Restart</button>
     </main>
     <footer class="footer">
         <p>Copyright © 2022 johntony366</p>

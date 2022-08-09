@@ -1,29 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-    --header-background-color: #eab308;
-    --header-font-color: #000000;
-    --background-color: #9ca3af;
-    --font-color: #bbf7d0;
-    --square-background-color: #e0f2fe;
+    --header-background-color: #395b64;
+    --header-font-color: #a5c9ca;
+    --background-color: #a5c9ca;
+    --font-color: #2c3333;
+    --square-background-color: #e7f6f2;
 
-    --button-background-color: #facc15;
-    --button-font-color: #6b7280;
+    --button-background-color: #395b64;
+    --button-active: #324b52;
+    --button-active: #2c3333;
+    --button-font-color: #b0e4db;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     display: grid;
     height: 100vh;
     grid-template-rows: 1.5fr 8fr 1fr;
-    font-family: 'Roboto', serif;
+    font-family: "Roboto", serif;
 }
 
 /* Header */
@@ -47,9 +49,15 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 32px;
     justify-content: center;
     align-items: center;
+}
+
+.messageBox {
+    margin-bottom: 24px;
+    margin-top: 24px;
+    font-size: 2rem;
+    color: var(--font-color);
 }
 
 .gameboard {
@@ -64,6 +72,16 @@ body {
 
 .square {
     background-color: var(--square-background-color);
+}
+
+.restart-button {
+    background-color: var(--button-background-color);
+    color: var(--button-font-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--button-font-color);
+    margin-top: 24px;
 }
 
 /* Footer */
