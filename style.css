@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --header-background-color: #eab308;
+    --header-font-color: #000000;
+    --background-color: #9ca3af;
+    --font-color: #bbf7d0;
+    --square-background-color: #e0f2fe;
+
+    --button-background-color: #facc15;
+    --button-font-color: #6b7280;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1.5fr 8fr 1fr;
+    font-family: 'Roboto', serif;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-background-color);
+}
+
+.header h1 {
+    color: var(--header-font-color);
+    font-size: 3rem;
+}
+
+/* Main */
+
+.main {
+    background-color: var(--background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    border: 2px solid black;
+    width: 450px;
+    height: 450px;
+    background-color: black;
+}
+
+.square {
+    background-color: var(--square-background-color);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fa-github {
+    color: black;
+}
