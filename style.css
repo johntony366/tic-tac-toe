@@ -6,10 +6,11 @@
     --background-color: #a5c9ca;
     --font-color: #2c3333;
     --square-background-color: #e7f6f2;
+    --square-hover-background-color: #cde0ff;
 
     --button-background-color: #395b64;
-    --button-hover: #324b52;
-    --button-active: #2c3333;
+    --button-hover-background-color: #324b52;
+    --button-active-background-color: #2c3333;
     --button-font-color: #b0e4db;
 }
 
@@ -80,6 +81,10 @@ body {
     font-size: 5rem;
 }
 
+.square:hover {
+    background-color: var(--square-hover-background-color);
+}
+
 .restart-button {
     background-color: var(--button-background-color);
     color: var(--button-font-color);
@@ -92,11 +97,11 @@ body {
 }
 
 .restart-button:hover {
-    background-color: var(--button-hover);
+    background-color: var(--button-hover-background-color);
 }
 
 .restart-button:active {
-    background-color: var(--button-active);
+    background-color: var(--button-active-background-color);
 }
 
 /* Footer */
