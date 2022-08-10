@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
     --header-background-color: #395b64;
@@ -25,7 +25,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-rows: 1.5fr 8fr 1fr;
-    font-family: "Roboto", serif;
+    font-family: "Varela Round", serif;
 }
 
 /* Header */
@@ -63,6 +63,7 @@ body {
 .gameboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2px;
     border: 2px solid black;
     width: 450px;
@@ -72,6 +73,11 @@ body {
 
 .square {
     background-color: var(--square-background-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
 }
 
 .restart-button {
@@ -80,7 +86,7 @@ body {
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 1rem;
-    border: 2px solid var(--button-font-color);
+    border: none;
     margin-top: 24px;
 }
 
