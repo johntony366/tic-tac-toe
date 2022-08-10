@@ -16,7 +16,7 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
 }
@@ -64,10 +64,10 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2px;
+    gap: 1px;
     border: 2px solid black;
-    width: 458px;
-    height: 458px;
+    width: 452px;
+    height: 452px;
     background-color: black;
 }
 
