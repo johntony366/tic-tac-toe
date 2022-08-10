@@ -8,7 +8,7 @@
     --square-background-color: #e7f6f2;
 
     --button-background-color: #395b64;
-    --button-active: #324b52;
+    --button-hover: #324b52;
     --button-active: #2c3333;
     --button-font-color: #b0e4db;
 }
@@ -88,6 +88,15 @@ body {
     border-radius: 1rem;
     border: none;
     margin-top: 24px;
+    box-shadow: none;
+}
+
+.restart-button:hover {
+    background-color: var(--button-hover);
+}
+
+.restart-button:active {
+    background-color: var(--button-active);
 }
 
 /* Footer */
