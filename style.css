@@ -64,10 +64,10 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 1px;
+    gap: 2px;
     border: 2px solid black;
-    width: 452px;
-    height: 452px;
+    width: 458px;
+    height: 458px;
     background-color: black;
 }
 
